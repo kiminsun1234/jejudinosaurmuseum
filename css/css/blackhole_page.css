@@ -1,0 +1,166 @@
+.inner,
+footer{font-family: 'Noto Sans KR', sans-serif;}
+
+
+
+
+
+header{}
+header .inner{display: flex; height: 100%; margin: 0 auto; justify-content: space-between; align-items: center; padding: 0 20px; box-sizing: border-box;}
+header .inner h1{margin: 15px 0;}
+header .inner h1 a{font-family: 'Black And White Picture', sans-serif; font-size: 32px; color: #0C0C0C;} 
+header nav{position: relative;}
+header .inner nav .menu_i{display: none;}
+header nav > div ul{display: flex; justify-content: space-between; flex-grow: 1; align-items: center; width: 100%;}
+header nav > div ul > li{ width: 176px; height: 59px; text-align: center;}
+header nav > div ul > li > a{line-height: 60px; padding: 25px; font-size: 16px; color: #0C0C0C;}
+header nav > div ul > li ol{display: none; height: 52px; background-color: #0C0C0C; position:absolute; left: 0; width: 100%; align-items: center; justify-content: space-between;}
+header nav > div ul > li:hover ol{display: flex; z-index: 12;}
+header nav > div ul > li ol li{padding: 0 20px; box-sizing: border-box;}
+header nav > div ul > li ol a{color: #c8c8c8; font-size: 18px; padding: 16px}
+header nav > div ul > li:first-child ol li:first-child a{color: #f6f6f6;}
+header nav > div ul > li:first-child ol li:first-child a:hover{color: #FFF1BD;}
+header nav > div ul > li:nth-child(2) ol li:nth-child(2) a{color: #f6f6f6;}
+header nav > div ul > li:nth-child(2) ol li:nth-child(2) a:hover{color: #FFF1BD;}
+header nav button{display: none;}
+
+article{background: url("../../img/black_main.png") no-repeat center center/cover; position: relative;}
+
+.main{text-align: center; max-width: 1216px; width: 100%; margin: 0 auto; margin-bottom: 111px; position: relative; z-index: 10;}
+.main h3{padding: 123px 0; font-size: 48px; font-weight: bold; color: #f6f6f6;}
+.main span{font-size: 18px; color: #f6f6f6; display: block; animation: textmove 2s ease-out;}
+.main span mark{font-weight: bold; color: #D74C38;}
+.main img{margin: 108px 0; width: 100%;}
+.main p{font-size: 18px; color: #f6f6f6; text-align: left; width: 100%; max-width: 1216px; margin: 0 auto; }
+@keyframes textmove{
+    0%{
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes disappear{
+    0%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(50px);
+        opacity: 0;
+    }
+}
+
+.entertainment{text-align: center; max-width: 1216px; width: 100%; margin: 0 auto; margin-bottom: 224px; position: relative; z-index: 10;}
+.entertainment img{margin-bottom: 105px; width: 100%;}
+.entertainment div{border: 1px solid #f6f6f6; font-size: 28px; font-weight: bold; color: #f6f6f6; width: 280px; height: 75px; line-height: 75px; margin:0 0 26px 208px;}
+.entertainment embed{max-width: 800px; width: 100%;}
+
+.plasma{text-align: center; max-width: 1216px; width: 100%; margin: 0 auto;}
+.plasma h3{font-size: 48px; font-weight: bold; color: #f6f6f6;}
+.plasma h3 mark{color: #D74C38;}
+.plasma span{font-size: 18px; color: #f6f6f6; display: block; margin: 96px;}
+.plasma p{font-size: 18px; color: #f6f6f6; width: 100%; max-width: 1216px; margin: 0 auto; text-align: left; padding-bottom: 61px;}
+
+.stars{position: absolute; width: 100%; height: 100%; top: 0; left: 0; overflow: hidden;}
+.stars span{position: absolute; left: 50%; top: 50%; width: 10px; height: 10px; background: white; 
+    border-radius: 50%; box-shadow:0 0 0 4px rgba(255,255,255,5%), 0 0 0 8px rgba(255,255,255,4%); 
+    animation: starmove 3s linear infinite;}
+.stars span::before{content: ''; position: absolute; top: 50%; transform: translateY(-50%); width: 330px; height: 2px; background: linear-gradient(90deg,#fff,transparent);}
+@keyframes starmove{
+    0%{
+        transform: rotate(315deg) translateX(0);
+        opacity: 1;
+    }
+    100%{
+        transform: rotate(315deg) translateX(-1000px);
+        opacity: 0;
+    }
+}
+.stars span:nth-child(1){top: 2%; left: 46%; animation-delay: 0.8s; animation-duration: 1.5s;}
+.stars span:nth-child(2){top: 13%; left: 70%; animation-delay: 0.8s; animation-duration: 1s;}
+.stars span:nth-child(3){top: 38%; left: 30%; animation-delay: 1s; animation-duration: 0.8s;}
+.stars span:nth-child(4){top: 40%; left: 88%; animation-delay: 1.5s; animation-duration: 1.2s;}
+.stars span:nth-child(5){top: 50%; left: 38%; animation-delay: 1s; animation-duration: 0.7s;}
+.stars span:nth-child(6){top: 67%; left: 77%; animation-delay: 2s; animation-duration: 1s;}
+.stars span:nth-child(7){top: 70%; left: 61%; animation-delay: 1.3s; animation-duration: 1.3s;}
+.stars span:nth-child(8){top: 80%; left: 85%; animation-delay: 1.4s; animation-duration: 0.9s;}
+footer{background-color: #f6f6f6;}
+footer > div{display: flex; justify-content: space-around; align-items: center;  height: 70px; margin: 0 auto;}
+footer > div h2{font-size: 20px; font-weight: bold;}
+footer > div span{display: block; text-align: center; font-size: 12px;}
+footer .sns ul{display: flex;}
+footer .sns ul li{margin-right:15px;}
+footer .sns ul li:last-child{margin-right: 0;}
+footer .sns ul li i{font-size: 24px; color: #5e5e5e;}
+
+@media screen and (max-width:1023px){
+    header .inner h1 a{font-size: 32px;}
+    header .inner nav div{display: none;}
+    header .inner nav input[id="menu_icon"]{display: none;}
+    header .inner nav input[id="menu_icon"] + label{display: block; margin: 20px; width: 30px; height: 20px; position: relative; cursor: pointer;}
+    header .inner nav input[id="menu_icon"] + label span{display: block; position: absolute; width: 100%; height: 3px; border-radius: 30px; background-color: black; transition: .5s;}
+    header .inner nav input[id="menu_icon"] + label span:nth-child(1){top: 0;}
+    header .inner nav input[id="menu_icon"] + label span:nth-child(2){top: 50%; transform: translateY(-50%);}
+    header .inner nav input[id="menu_icon"] + label span:nth-child(3){bottom: 0;}
+    header .inner nav input[id="menu_icon"]:checked + label{z-index: 2;}
+    header .inner nav input[id="menu_icon"]:checked + label span{background-color: black;}
+    header .inner nav input[id="menu_icon"]:checked + label span:nth-child(1){top: 50%; transform: translateY(-50%) rotate(45deg);}
+    header .inner nav input[id="menu_icon"]:checked + label span:nth-child(2){opacity: 0;}
+    header .inner nav input[id="menu_icon"]:checked + label span:nth-child(3){bottom: 50%; transform: translateY(50%) rotate(-45deg);}
+    header .inner nav input[id="menu_icon"]:checked + label + div{display: block; position: absolute; left: 0; top:60px; width: 100%; background-color: #ffffff; z-index: 20;}
+    header .inner nav{position: unset;}
+    header .inner nav div ul{display: flex; flex-direction: column;}
+    header .inner nav div ul .menu { height: 100%; width: 100%;}
+    header .inner nav div ul .menu ol{display: none; width: 100%; flex-direction: column; height: 100%;}
+    header .inner nav div ul .menu ol li{padding: 20px 0;}
+    header .inner nav div ul .menu:hover ol{display: none;}
+    header .inner nav div ul .menu ol li a{font-size: 18px;}
+    header .inner nav input[id="menu_icon"]:checked + label + div ul li ol{position: unset;}
+    header .inner nav input[id="menu_icon"]:checked + label + div ul li.active ol{display: flex;}
+    header nav button{display:block; width: 100%; font-size: 18px; padding: 25px 0; background: #fff; border: 0; cursor: pointer;}
+
+    .main,
+    .entertainment,
+    .plasma{padding: 0 20px; box-sizing: border-box;}
+
+    .main{margin-bottom: 91px;}
+    .main h3{padding: 90px 0; font-size: 36px;}
+    .main span{font-size: 16px;}
+    .main img{margin: 78px 0;}
+    .main p{font-size: 16px;}
+
+    .entertainment div{font-size: 24px; width: 270px; height: 65px; line-height: 65px; margin:26px auto;}
+
+    .plasma h3{font-size: 36px;}
+    .plasma span{font-size: 16px;}
+    .plasma p{font-size: 16px;}
+
+    footer{background-color: #f6f6f6;}
+    footer > div{display: flex; flex-direction: column; justify-content: space-around; align-items: center; height: 120px; margin: 0 auto;}
+    footer > div h2{font-size: 20px; font-weight: bold;}
+    footer > div span{display: block; text-align: center; font-size: 12px;}
+    footer .sns ul{display: flex;}
+    footer .sns ul li{margin-right:15px;}
+    footer .sns ul li:last-child{margin-right: 0;}
+    footer .sns ul li i{font-size: 24px; color: #5e5e5e;}
+}
+
+
+@media screen and (max-width:670px){
+    header .inner h1 a{font-size: 20px;}
+    header .inner nav div ul .menu ol li a{font-size: 16px;}
+
+    .main{margin-bottom: 81px;}
+    .main h3{font-size: 32px;}
+    .main span{font-size: 14px;}
+    .main p{font-size: 14px;}
+
+    .entertainment div{font-size: 20px; width: 240px; height: 60px; line-height: 60px; margin:26px auto;}
+
+    .plasma h3{font-size: 32px;}
+    .plasma span{font-size: 14px;}
+    .plasma p{font-size: 14px;}
+}
