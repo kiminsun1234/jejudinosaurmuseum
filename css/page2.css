@@ -228,8 +228,10 @@ footer .sns ul li i{font-size: 24px; color: #5e5e5e;}
     .main h3{font-size: 24px; padding-top: 188px;}
     .main span{font-size: 12px;}
 
-    .gallery .gallery_con li div p{font-size: 20px; font-weight: bold;}
-    .gallery .gallery_con li div span{font-size: 12px;}
+    .gallery .gallery_con li div{display: flex; flex-direction: column; justify-content: center;}
+    .gallery .gallery_con li div p{font-size: 20px; line-height: 24px; font-weight: bold;}
+    .gallery .gallery_con li div span{font-size: 12px; line-height: 16px;}
+
 
     .program .rare_animal span,
     .program .blackhole span,
